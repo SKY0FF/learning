@@ -118,18 +118,18 @@ public class GUI_Sqrt extends JFrame{
             int n_7 = search(desired_7, z_8);//8 число ответа
 
             if(sqrt_x > 10000){
-                int answer = Integer.parseInt((((sqrt(first_rank)*100)+n*10)+n_2) + "," + n_3 + n_4 + n_5 + n_6 + n_7);
+                String answer = "" + (((sqrt(first_rank)*100)+n*10)+n_2) + "," + n_3 + n_4 + n_5 + n_6 + n_7 + "";
                 String message = "Корень из " + sqrt_x + " равен " + answer;
                 JOptionPane.showMessageDialog(null, message, "Output", JOptionPane.PLAIN_MESSAGE);
             }
             else if(sqrt_x > 100){
-                int answer = Integer.parseInt(((sqrt(first_rank)*10)+n) + "," + n_2 + n_3 + n_4 + n_5 + n_6 + n_7);
+                String answer = "" + ((sqrt(first_rank)*10)+n) + "," + n_2 + n_3 + n_4 + n_5 + n_6 + n_7 + "";
                 String message = "Корень из " + sqrt_x + " равен " + answer;
                 JOptionPane.showMessageDialog(null, message, "Output", JOptionPane.PLAIN_MESSAGE);
             }
 
             else if(sqrt_x < 100){
-                int answer = Integer.parseInt((sqrt(first_rank)) + "," + n + n_2 + n_3 + n_4 + n_5 + n_6 + n_7);
+                String answer = "" + (sqrt(first_rank)) + "," + n + n_2 + n_3 + n_4 + n_5 + n_6 + n_7 + "";
                 String message = "Корень из " + sqrt_x + " равен " + answer;
                 JOptionPane.showMessageDialog(null, message, "Output", JOptionPane.PLAIN_MESSAGE);
             }
