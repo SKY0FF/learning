@@ -67,7 +67,7 @@ public class GUI_Calc extends JFrame{
         constraints.gridx = 3;
         constraints.gridy = 2;
         constraints.gridheight = 2;
-        container.add(butt_plus, constraints);
+        container.add(butt_plus, constraints);// не работает 2 в высоту
 
         constraints.gridheight = 1;
         constraints.gridy = 4;
@@ -88,6 +88,6 @@ public class GUI_Calc extends JFrame{
         container.add(butt_comma, constraints);
         constraints.gridx = 3;
         constraints.gridheight = 2;
-        container.add(butt_eq, constraints);
+        container.add(butt_eq, constraints);// не работает 2 в высоту
     }
 }
