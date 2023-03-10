@@ -2,10 +2,7 @@ package GUI2;
 
 import java.awt.*;
 import java.awt.event.*;
-import java.util.Scanner;
 import javax.swing.*;
-
-import static java.lang.System.out;
 
 public class GUI_Sqrt extends JFrame{
     private JButton button = new JButton("Вычислить корень");
@@ -28,7 +25,6 @@ public class GUI_Sqrt extends JFrame{
 
     class search implements ActionListener{
         public void actionPerformed(ActionEvent e){
-            Scanner in = new Scanner(System.in);
             int sqrt_x;
             sqrt_x =Integer.parseInt (input.getText());// само число из которого нужно извлечь корень
 
