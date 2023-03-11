@@ -33,9 +33,6 @@ public class GUI_Calc extends JFrame{
         container.setLayout(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
         constraints.fill = GridBagConstraints.HORIZONTAL;
-        constraints.weightx = 0.5;
-        constraints.gridy = 0;
-        constraints.gridx = 0;
         constraints.gridwidth = 4;
         container.add(input, constraints);
 
@@ -58,8 +55,10 @@ public class GUI_Calc extends JFrame{
         container.add(butt_9, constraints);
         constraints.gridx = 3;
         constraints.gridheight = 2;
+        constraints.fill = GridBagConstraints.VERTICAL;
         container.add(butt_plus, constraints);// не работает в высоту 2
 
+        constraints.fill = GridBagConstraints.HORIZONTAL;
         constraints.gridheight = 1;
         constraints.gridy = 3;
         constraints.gridx = 0;
@@ -78,8 +77,10 @@ public class GUI_Calc extends JFrame{
         container.add(butt_3, constraints);
         constraints.gridx = 3;
         constraints.gridheight = 2;
+        constraints.fill = GridBagConstraints.VERTICAL;
         container.add(butt_eq, constraints);// не работает в высоту 2
 
+        constraints.fill = GridBagConstraints.HORIZONTAL;
         constraints.gridheight = 1;
         constraints.gridwidth = 2;
         constraints.gridy = 5;
